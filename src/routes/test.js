@@ -79,7 +79,7 @@ export default function test() {
                 <iframe
                   title="Videoplaylist"
                   className="embed-responsive-item"
-                  src="https://vimeo.com/showcase/10028265/embed"
+                  src="https://vimeo.com/showcase/10024958/embed"
                   frameborder="0"
                   allow="autoplay; fullscreen"
                   allowfullscreen
@@ -130,7 +130,7 @@ export default function test() {
                     <Form>
                       <div className="controls">
                         <span class="lead text-muted">
-                          <h2>eksamensvideoer</h2>
+                          <h2>videoer</h2>
                           <Row>
                             <Col class="col-6">
                               <div>

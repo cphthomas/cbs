@@ -12,7 +12,7 @@ import Front from './routes/front';
 // import Middel from './routes/middel';
 
 // import Normal from './routes/normal';
-import Eksamensvideoer from './routes/eksamensvideoer';
+import Videoer from './routes/videoer';
 import Test from './routes/test';
 // import Poisson from './routes/poisson';
 // import Chi2 from './routes/chi2';
@@ -33,7 +33,7 @@ root.render(
         <Route path="lr" element={<Lr />}></Route>
         <Route path="mean" element={<Mean />}></Route>
         <Route path="normal" element={<Normal />}></Route> */}
-        <Route path="eksamensvideoer" element={<Eksamensvideoer />}></Route>
+        <Route path="videoer" element={<Videoer />}></Route>
         <Route path="test" element={<Test />}></Route>
         {/* <Route path="poisson" element={<Poisson />}></Route>
         <Route path="chi2" element={<Chi2 />}></Route>

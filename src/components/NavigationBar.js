@@ -42,18 +42,18 @@ export const NavigationBar = () => (
         <Nav className="mr-auto">
           <Nav.Item>
             <Dropdown size="sm">
-              <Dropdown.Toggle size="sm" variant="primary" id="dropdown-basic">
+              <Dropdown.Toggle size="sm" variant="dark" id="dropdown-basic">
                 Menu
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item size="sm" href="/eksamensvideoer" target="_blank">
-                  Eksamensvideoer
+                <Dropdown.Item size="sm" href="/Videoer" target="_blank">
+                  <b>Videoer</b>
                 </Dropdown.Item>
                 {/* <Dropdown.Item size="sm" href="/hypergeo" target="_blank">
                   Podcasts
                 </Dropdown.Item> */}
                 <Dropdown.Item size="sm" href="https://audio.tepedu.dk/" target="_blank">
-                  Podcasts
+                  <b>Podcasts</b>
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
