@@ -10,6 +10,36 @@ export default function Videoer() {
           <div class="card">
             <div class="card-body">
               <div>
+                <h2>Videoplaylist fra lektionerne</h2>
+                <h6>Playlist fra online lektionerne herunder, indhold uploades løbende:</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <Container className="p-0">
+        <div class="p-3 mb-2 bg-white text-black">
+          <div class="card">
+            <div class="card-body">
+              <div className="embed-responsive embed-responsive-16by9">
+                <iframe
+                  title="Videoplaylist"
+                  className="embed-responsive-item"
+                  src="https://vimeo.com/showcase/10124794/embed"
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <Container className="p-0">
+        <div class="p-3 mb-2 bg-white text-black">
+          <div class="card">
+            <div class="card-body">
+              <div>
                 <h2>Videoplaylists Opgaveark til lektioner CBS BI HD</h2>
                 <h6>
                   Videoplaylists, for opgaveark, udviklet af HD BI fagansvarlig Mads Stenbo Nielsen - Department of
