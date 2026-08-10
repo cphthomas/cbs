@@ -1,43 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="da">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5f7">
+    <meta name="description" content="Videoplaylister og undervisningsmateriale til CBS BI HD.">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+    <title>CBS BI · Videoer og materiale</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primær navigation">
+        <a class="brand" href="/">CBS BI</a>
+        <details class="menu">
+          <summary>Menu</summary>
+          <div class="menu-panel">
+            <a href="/Videoer">Videoer</a>
+            <a href="https://audio.tepedu.dk/" target="_blank" rel="noopener noreferrer">Podcasts</a>
+          </div>
+        </details>
+      </nav>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <main class="page-shell">
+      <section class="card intro-card">
+        <p class="eyebrow">CBS · Business Intelligence</p>
+        <h1>Videoplaylister fra lektionerne</h1>
+        <p>Playlister fra onlinelektionerne. Indhold uploades løbende.</p>
+      </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <section class="card media-card" aria-label="Playlist fra lektionerne">
+        <div class="video-frame">
+          <iframe
+            src="https://vimeo.com/showcase/10124794/embed"
+            title="Videoplaylist fra lektionerne"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow">Opgaveark</p>
+        <h2>Videoplaylister til lektioner</h2>
+        <p>
+          Videoplaylister til opgaveark udviklet af HD BI-fagansvarlig Mads Stenbo Nielsen,
+          Department of Finance, CBS.
+        </p>
+      </section>
+
+      <section class="card media-card" aria-label="Playlist med opgaveark">
+        <div class="video-frame">
+          <iframe
+            src="https://vimeo.com/showcase/10900938/embed"
+            title="Videoplaylist med opgaveark"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Løsningsforslag til opgaveark</h2>
+        <div class="link-list">
+          <a href="https://docs.google.com/document/d/1f21hhUcBphPAd4JOQwB79W2NSqKBtsFa2pnG_mQQNmM/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>01</span> Databeskrivelse, 1 variabel</a>
+          <a href="https://docs.google.com/document/d/1346TW5MK9FEiBZWZI30yEwl2vTTOpWO4AFh7OD_ESxs/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>02</span> Databeskrivelse, 2 variable og sandsynlighedsberegning</a>
+          <a href="https://docs.google.com/document/d/1fIUHJhR9fPk8fi6gOKU93FKp6hQwyy6Tjb2PgwZBWdA/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>03</span> Teoretiske fordelinger</a>
+          <a href="https://docs.google.com/document/d/1g8919txxtmJ7zIi9NdhLN8UdOipSSp7r7DgzFdpfsKk/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>04</span> Analyse af én gruppe — konfidensinterval</a>
+          <a href="https://docs.google.com/document/d/1NUpPneb421OheK8dj1QvhWqrq1S16SOsCOLJjfcAq9Y/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>05</span> Analyse af én gruppe — hypotesetest</a>
+          <a href="https://docs.google.com/document/d/1hVTf9C68fAu3LSJ4fhJXAJ69xEgO1787_V5F9Nl7GqI/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>06</span> Analyse af to grupper</a>
+          <a href="https://docs.google.com/document/d/1cQo4VMgatd4xXQjrUiwLLmKFsM_e7_aUvu8xG8ZWu6o/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>07</span> Analyse af mere end to grupper</a>
+          <a href="https://docs.google.com/document/d/1Nb-PPqYBfKFh8vFbAa1B8p2jGxh2upMVqcNhsFm6cwg/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>08</span> Regression med én forklarende variabel</a>
+          <a href="https://docs.google.com/document/d/1jzCM4z6wE0FlLU1wkXHamk2tdpq-rXmUOf27DAYRX5E/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>09</span> Regression med flere forklarende variable</a>
+          <a href="https://drive.google.com/drive/folders/1uYT2Ka1_g3W6nkrLUKlZRLFFSF1L-RRz?usp=sharing" target="_blank" rel="noopener noreferrer"><span>+</span> Mappe med skabeloner til hypotesetests</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow">Eksamen</p>
+        <h2>Eksamen 2022 · CBS BI</h2>
+        <p>
+          Eksamen, data og løsningsforslag er udviklet af HD BI-fagansvarlig Mads Stenbo Nielsen,
+          Department of Finance, CBS.
+        </p>
+      </section>
+
+      <section class="card media-card" aria-label="Playlist til eksamen 2022">
+        <div class="video-frame">
+          <iframe
+            src="https://vimeo.com/showcase/10024958/embed"
+            title="Videoplaylist til eksamen 2022"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Materiale til eksamen</h2>
+        <div class="resource-grid">
+          <a href="https://www.dropbox.com/s/urz2s0lr96etgte/BI%2C%20efter%C3%A5r%202022%2C%20ordin%C3%A6r_v3.pdf?dl=1">Eksamenopgave</a>
+          <a href="https://www.dropbox.com/s/rfqf9t2ncvlklxu/Eksamen%20efter%C3%A5r%202022%2C%20ordin%C3%A6r%20-%20vejledende%20besv_v3.pdf?dl=1">Løsningsforslag</a>
+          <a href="https://www.dropbox.com/s/i3bw60lxmwd5unl/Fjernvarme.jmp?dl=1">JMP-data</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>CBS BI · Undervisningsmateriale</p>
+    </footer>
   </body>
 </html>

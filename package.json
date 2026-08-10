@@ -1,84 +1,15 @@
 {
-  "name": "router-tutorial",
-  "version": "0.1.0",
+  "name": "cbs-bi-materiale",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.8",
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.1.18",
-    "@handsontable/react": "^12.0.1",
-    "@stdlib/stats-base-dists-chisquare": "^0.0.6",
-    "@stdlib/stats-base-dists-chisquare-cdf": "^0.0.6",
-    "@stdlib/stats-base-dists-normal-cdf": "^0.0.6",
-    "@stdlib/stats-base-dists-normal-quantile": "^0.0.6",
-    "@stdlib/stats-base-dists-normal-skewness": "^0.0.8",
-    "@stdlib/stats-base-dists-t-quantile": "^0.0.6",
-    "@stdlib/stats-vartest": "^0.0.7",
-    "@stdlib/stdlib": "^0.0.96",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "better-react-mathjax": "^2.0.1",
-    "bootstrap": "^4.6.1",
-    "compute-kurtosis": "^1.0.0",
-    "compute-skewness": "^1.0.1",
-    "handsontable": "^12.0.1",
-    "highcharts": "^10.1.0",
-    "highcharts-react-official": "^3.1.0",
-    "mathjs": "^10.6.1",
-    "mdbreact": "^5.2.0",
-    "ml-regression-multivariate-linear": "^2.0.3",
-    "norminv": "^2.0.0",
-    "numbro": "^2.3.6",
-    "react": "^18.1.0",
-    "react-bootstrap": "^2.4.0",
-    "react-bootstrap-dropdown": "^0.3.0",
-    "react-bootstrap-navbar": "^1.1.0",
-    "react-dom": "^18.1.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "react-spreadsheet": "^0.7.7",
-    "regression": "^2.0.1",
-    "scheduler": "^0.23.0",
-    "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
-  },
+  "description": "Videoplaylister og undervisningsmateriale til CBS BI HD.",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node serve.mjs",
+    "build": "node build.mjs"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cphthomas/bi.git"
+    "url": "git+https://github.com/cphthomas/cbs.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cphthomas/bi/issues"
-  },
-  "homepage": "/"
+  "license": "ISC"
 }
