@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:ital,wght@0,500;0,600;0,700;1,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
 :root {
   --ink: #17202a;
@@ -7,8 +7,8 @@
   --paper: #ffffff;
   --canvas: #ffffff;
   --accent: #8b1825;
-  --soft-shadow: 0 2px 10px rgba(23, 32, 42, 0.06);
-  --hover-shadow: 0 18px 44px rgba(23, 32, 42, 0.17);
+  --soft-shadow: 0 6px 20px rgba(23, 32, 42, 0.045), 0 1px 4px rgba(23, 32, 42, 0.03);
+  --hover-shadow: 0 22px 50px rgba(23, 32, 42, 0.14), 0 8px 18px rgba(23, 32, 42, 0.08);
 }
 
 * {
@@ -36,19 +36,22 @@ h3,
   margin-top: 0;
   font-family: 'Darker Grotesque', 'Arial Narrow', sans-serif;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.05;
   letter-spacing: -0.025em;
+}
+
+h1,
+h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.9rem, 4.2vw, 2.75rem);
+  transition:
+    color 220ms ease,
+    font-style 220ms ease,
+    letter-spacing 220ms ease;
 }
 
 h1 {
   max-width: 760px;
-  margin-bottom: 1rem;
-  font-size: clamp(2.8rem, 8vw, 5.5rem);
-}
-
-h2 {
-  margin-bottom: 0.75rem;
-  font-size: clamp(2rem, 5vw, 3.25rem);
 }
 
 p {
@@ -142,17 +145,16 @@ footer {
 
 .card {
   padding: clamp(1.35rem, 4vw, 3rem);
-  border: 1px solid var(--line);
+  border: 0;
   background: var(--paper);
   box-shadow: var(--soft-shadow);
   transition:
-    border-color 200ms ease,
-    box-shadow 200ms ease,
-    transform 200ms ease;
+    box-shadow 220ms ease,
+    transform 220ms ease;
 }
 
 .intro-card {
-  padding-block: clamp(3rem, 10vw, 7rem);
+  padding-block: clamp(1.35rem, 4vw, 3rem);
 }
 
 .eyebrow {
@@ -182,6 +184,8 @@ footer {
   width: 100%;
   height: 100%;
   border: 0;
+  transform: scale(1);
+  transition: transform 320ms ease;
 }
 
 .link-list {
@@ -200,6 +204,7 @@ footer {
   text-decoration: none;
   transition:
     color 160ms ease,
+    font-style 160ms ease,
     padding 160ms ease;
 }
 
@@ -234,6 +239,7 @@ footer {
   transition:
     border-color 160ms ease,
     color 160ms ease,
+    font-style 160ms ease,
     transform 160ms ease;
 }
 
@@ -268,15 +274,26 @@ footer {
   }
 
   .card:hover {
-    border-color: #ccd2d9;
     box-shadow: var(--hover-shadow);
     transform: translateY(-4px);
+  }
+
+  .card:hover h1,
+  .card:hover h2 {
+    color: var(--accent);
+    font-style: italic;
+    letter-spacing: -0.01em;
+  }
+
+  .media-card:hover .video-frame iframe {
+    transform: scale(1.035);
   }
 
   .link-list a:hover,
   .link-list a:focus-visible {
     padding-inline: 0.4rem;
     color: var(--accent);
+    font-style: italic;
   }
 
   .link-list a:hover::after,
@@ -289,6 +306,7 @@ footer {
   .resource-grid a:focus-visible {
     border-color: var(--accent);
     color: var(--accent);
+    font-style: italic;
     transform: translateY(-2px);
   }
 
@@ -346,7 +364,10 @@ footer {
   .link-list a,
   .link-list a::after,
   .resource-grid a,
-  .resource-grid a::after {
+  .resource-grid a::after,
+  h1,
+  h2,
+  .video-frame iframe {
     transition: none;
   }
 
